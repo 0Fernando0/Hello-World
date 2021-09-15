@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML5</title>
+</head>
+<body>
+    <h1>imagens dinamica</h1>
+    <p>tente aquir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho de seu navegador</p>
+    <picture>
+        <!--tag <picture> usada para deixar a imagem ajustavel ao tamanho de tela do dispositivo-->
+        <!--tag <source> usada para ajustar o tamanho da imagem-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexivel">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <!--podemos usar a tag (preload) dentro da tag <audio> para ajustar o audio-->
+    <!--podemos tambem usar a tag <source src type>para ajustar o formato dos audios para ser compativel com outros dispositivos-->
+        <!--MP3,OGG,WAV-->
+    <audio autoplay controls>
+        <source src="medias/Cartoon - On & On (feat. Daniel Levi) NCS Release _70k.mp3" type="audio/mpeg">
+    </audio>
+    
+
+
+</body>
+</html>
